@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Amita-Bold";
+  src: local("Amita-Bold"),
+  url("./Amita-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Kalameh Bold";
+  src: local("Kalameh Bold"),
+  url("./Kalameh Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"),
+  url("./Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("Roboto-Medium"),
+  url("./Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular"),
+  url("./Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
