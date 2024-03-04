@@ -7,40 +7,49 @@ import styled from "styled-components";
 
 export function MainSection(props) {
   return (
-    <SectionStyled>
-      <WrapGrid>
-        <Wrap>
-          <WrapIconCross>
-            <Icon iconId={'crossDark'} size={'107'} viewBox={'0 0 107 107'}/>
-          </WrapIconCross>
-          <MainPhoto/>
-        </Wrap>
-        <Wrap>
-          <MainTitle/>
-          <WrapLink>
-            <StyledProjButton>
-              See Projects
-              <Icon iconId={'arrowRight'} size={'28'} viewBox={'0 0 28 28'}/>
-            </StyledProjButton>
-            <StyledLink>Download Resume</StyledLink>
-          </WrapLink>
-        </Wrap>
-      </WrapGrid>
-      <WrapIconCircle>
-        <Icon iconId={'circleDark'} size={'152'} viewBox={'0 0 152 152'}/>
-      </WrapIconCircle>
-    </SectionStyled>
+    <StyledSection>
+      <StyledWrapSection>
+        <StyledWrapGrid>
+          <StyledWrap>
+            <StyledWrapIconCross>
+              <Icon iconId={'crossDark'} size={'107'} viewBox={'0 0 107 107'}/>
+            </StyledWrapIconCross>
+            <MainPhoto/>
+          </StyledWrap>
+          <StyledWrap>
+            <MainTitle/>
+            <StyledWrapLink>
+              <StyledProjButton>
+                See Projects
+                <Icon iconId={'arrowRight'} size={'28'} viewBox={'0 0 28 28'}/>
+              </StyledProjButton>
+              <StyledLink>Download Resume</StyledLink>
+            </StyledWrapLink>
+          </StyledWrap>
+        </StyledWrapGrid>
+        <StyledWrapIconCircle>
+          <Icon iconId={'circleDark'} size={'152'} viewBox={'0 0 152 152'}/>
+        </StyledWrapIconCircle>
+      </StyledWrapSection>
+    </StyledSection>
   );
 }
 
-const SectionStyled = styled.section
+const StyledSection = styled.section
+  `
+      background: linear-gradient(90deg, rgba(36, 51, 92, 1) 30%, rgba(255, 255, 255, 0) 30%);
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+  `
+
+const StyledWrapSection = styled.div
   `
       position: relative;
       max-width: 1160px;
-      margin: 0 auto 100px auto;
+      margin: 0 auto;
   `
 
-const WrapGrid = styled.div
+const StyledWrapGrid = styled.div
   `
       display: grid;
       justify-items: center;
@@ -56,25 +65,25 @@ const WrapGrid = styled.div
       border-radius: 200px 0;
   `
 
-const Wrap = styled.div
+const StyledWrap = styled.div
   `
       position: relative;
   `
 
-const WrapIconCircle = styled.div
+const StyledWrapIconCircle = styled.div
   `
       position: absolute;
       right: -5px;
       bottom: -15px;
   `
-const WrapIconCross = styled.div
+const StyledWrapIconCross = styled.div
   `
       position: absolute;
       right: 90px;
       top: -90px;
   `
 
-const WrapLink = styled.div
+const StyledWrapLink = styled.div
   `
       display: grid;
       grid-template-columns: 200px 1fr;
@@ -84,18 +93,18 @@ const WrapLink = styled.div
 
 const StyledProjButton = styled(StyledButton)
   `
+      font-family: Roboto-Medium;
+      font-size: 15px;
+      line-height: 22px;
       display: grid;
       grid-template-columns: 1fr 28px;
       align-items: center;
       gap: 14px;
-      font-family: Roboto-Medium;
-      font-size: 15px;
-      line-height: 22px;
-      background-color: #2157f2;
       padding: 13px 36px;
       border-radius: 20px;
-      cursor: pointer;
+      background-color: #2157f2;
       transition: transform 0.4s;
+      cursor: pointer;
 
       &:hover {
           transform: scale(1.05);
