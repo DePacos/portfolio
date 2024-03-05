@@ -2,16 +2,25 @@ import React from 'react';
 import styled from "styled-components";
 import {MainSection} from "./mainSection/MainSection";
 import {SkillsSection} from "./skillsSection/SkillsSection";
+import {ProjectSection} from "./projectSection/ProjectSection";
 
-export function Main() {
-    return (
-        <StyledMain>
-            <MainSection/>
-            <SkillsSection/>
-        </StyledMain>
-    );
+type MainPropsType = {
+    skillsData: {
+        id: number;
+        iconId: string;
+        name: string;
+    }[],
+    skillsButtonData: Array<string>,
 }
 
-const StyledMain = styled.main
-    `
-    `
+export function Main(props: MainPropsType) {
+    return (
+        <main>
+            <MainSection/>
+            <SkillsSection
+                skillsData={props.skillsData}
+            />
+            <ProjectSection skillsButtonData={props.skillsButtonData}/>
+        </main>
+    );
+}
