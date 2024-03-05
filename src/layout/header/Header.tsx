@@ -4,20 +4,20 @@ import {Menu} from "../../components/menu/Menu";
 import {Icon} from "../../components/icons/Icon";
 import styled from "styled-components";
 
+export type headerPropsType = {
+    menuData: {
+        id: number;
+        name: string;
+        link: string;
+    }[];
 
-const menuItems = [
-    {id: 1, name: 'Home', link: '#'},
-    {id: 2, name: 'Skills', link: '#'},
-    {id: 3, name: 'Projects', link: '#'},
-    {id: 4, name: 'Contact', link: '#'},
-]
+}
 
-export const Header = () => {
+export const Header = (props: headerPropsType) => {
     return (
-
         <StyledHeader>
             <Logo/>
-            <Menu menuItems={menuItems}/>
+            <Menu menuData={props.menuData}/>
             <Icon iconId={'moon'} size={'36'} viewBox={'0 0 90 90'}/>
         </StyledHeader>
 
