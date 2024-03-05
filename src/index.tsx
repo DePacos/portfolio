@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import {dataBase} from "./redux/state";
 import {GlobalStyles} from "./Styles/GlobalStyles";
 import {ThemeProvider} from "styled-components";
 import {glTheme} from "./Styles/ThemeStyled";
@@ -13,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <ThemeProvider theme={glTheme}>
-            <App/>
+            <App  dataBase={dataBase}/>
             <GlobalStyles/>
         </ThemeProvider>
     </React.StrictMode>
