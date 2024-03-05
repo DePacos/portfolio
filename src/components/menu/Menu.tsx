@@ -1,12 +1,19 @@
 import React from 'react';
 import styled from "styled-components";
 
+type MenuPropsType = {
+    menuData: {
+        id: number;
+        name: string;
+        link: string;
+    }[];
+}
 
-export const Menu = (props: {menuItems: Array<any>}) => {
+export const Menu = (props: MenuPropsType) => {
     return (
         <StyledMenu>
             <ul>
-                {props.menuItems.map((e, ) => {
+                {props.menuData.map((e) => {
                     return <li key={e.id}><a href={e.link}>{e.name}</a></li>
                 })}
             </ul>
