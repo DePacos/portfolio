@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
 
+import {MenuData} from "../../App";
+
+
 type MenuPropsType = {
-    menuData: {
-        id: number;
-        name: string;
-        link: string;
-    }[];
+    menuData: MenuData[];
 }
 
 export const Menu = (props: MenuPropsType) => {
