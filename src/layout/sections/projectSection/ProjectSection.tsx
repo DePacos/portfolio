@@ -4,8 +4,11 @@ import {StyledTitle} from "../../../components/title/Title";
 import ProjectSimple from "./projectSimple/ProjectSimple";
 import {ProjectButton} from "./projectSimple/ProjectButton";
 
+import {ProjectData} from "../../../App";
+
 type ProjectSectionPropsType = {
     skillsButtonData: Array<string>,
+    projectData: ProjectData[];
 }
 
 export function ProjectSection(props: ProjectSectionPropsType) {
@@ -13,14 +16,13 @@ export function ProjectSection(props: ProjectSectionPropsType) {
         <StyledProjectSection>
             <StyledTitle>Project</StyledTitle>
             <ProjectButton skillsButtonData={props.skillsButtonData}/>
-            <ProjectSimple/>
+            <ProjectSimple projectData={props.projectData}/>
         </StyledProjectSection >
     );
 }
 
 const StyledProjectSection = styled.section
-    `
-        max-width: 1200px;
-        margin: 0 auto;
+    `  max-width: 1200px;
+       margin: 0 auto;
     `
 
