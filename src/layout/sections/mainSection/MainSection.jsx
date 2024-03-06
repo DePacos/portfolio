@@ -4,6 +4,8 @@ import {MainTitle} from "./mainTitle/MainTitle";
 import {StyledButton} from "../../../components/button/Button";
 import {Icon} from "../../../components/icons/Icon";
 import styled from "styled-components";
+import ellipse from '../../../assets/icon/ellipse.svg'
+import cross from '../../../assets/icon/cross.svg'
 
 export function MainSection(props) {
   return (
@@ -27,9 +29,6 @@ export function MainSection(props) {
             </StyledWrapLink>
           </StyledWrap>
         </StyledWrapGrid>
-        <StyledWrapIconCircle>
-          <Icon iconId={'circleDark'} size={'152'} viewBox={'0 0 152 152'}/>
-        </StyledWrapIconCircle>
       </StyledWrapSection>
     </StyledSection>
   );
@@ -38,15 +37,16 @@ export function MainSection(props) {
 const StyledSection = styled.section
   `
       background: linear-gradient(90deg, rgba(36, 51, 92, 1) 30%, rgba(255, 255, 255, 0) 30%);
-      padding-bottom: 20px;
+      padding: 0 40px 20px 40px;
       margin-bottom: 40px;
   `
 
 const StyledWrapSection = styled.div
   `
       position: relative;
-      max-width: 1160px;
+      max-width: 1200px;
       margin: 0 auto;
+      background: url(${ellipse}) no-repeat bottom right;
   `
 
 const StyledWrapGrid = styled.div
@@ -59,7 +59,7 @@ const StyledWrapGrid = styled.div
       z-index: 1;
       align-items: center;
       justify-items: center;
-      ////padding: 42px 0;
+      padding: 42px 0;
       background: linear-gradient(0deg, rgba(57, 57, 57, .5), rgba(0, 66, 255, .05));
       border: 2px solid rgba(85, 96, 128, 1);
       border-radius: 200px 0;
@@ -70,17 +70,11 @@ const StyledWrap = styled.div
       position: relative;
   `
 
-const StyledWrapIconCircle = styled.div
-  `
-      position: absolute;
-      right: -5px;
-      bottom: -15px;
-  `
 const StyledWrapIconCross = styled.div
   `
       position: absolute;
       right: 90px;
-      top: -90px;
+      top: -130px;
   `
 
 const StyledWrapLink = styled.div
