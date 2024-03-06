@@ -4,16 +4,13 @@ import {Menu} from "../../components/menu/Menu";
 import {Icon} from "../../components/icons/Icon";
 import styled from "styled-components";
 
-export type headerPropsType = {
-    menuData: {
-        id: number;
-        name: string;
-        link: string;
-    }[];
+import {MenuData} from "../../App";
 
+export type HeaderPropsType = {
+    menuData: MenuData[];
 }
 
-export const Header = (props: headerPropsType) => {
+export const Header = (props: HeaderPropsType) => {
     return (
         <StyledHeader>
             <Logo/>
@@ -30,7 +27,7 @@ const StyledHeader = styled.header
         grid-template-columns: 70px 1fr 36px;
         align-items: center;
         justify-items: end;
-        padding: 35px 35px 75px 35px;
+        padding: 35px 40px 75px 40px;
         background: linear-gradient(90deg, rgba(36, 51, 92, 1) 30%, rgba(255, 255, 255, 0) 30%);
 
     `
