@@ -2,12 +2,10 @@ import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../../components/icons/Icon";
 
-export type SkillSimplePropsType = {
-    skillsData: {
-        id: number;
-        iconId: string;
-        name: string;
-    }[],
+import {SkillsData} from "../../../../App";
+
+type SkillSimplePropsType = {
+    skillsData: SkillsData[],
 }
 
 export function SkillSimple(props: SkillSimplePropsType) {
