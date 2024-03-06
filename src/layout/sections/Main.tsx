@@ -1,16 +1,14 @@
 import React from 'react';
-import styled from "styled-components";
 import {MainSection} from "./mainSection/MainSection";
 import {SkillsSection} from "./skillsSection/SkillsSection";
 import {ProjectSection} from "./projectSection/ProjectSection";
 
+import {SkillsData, ProjectData} from "../../App";
+
 type MainPropsType = {
-    skillsData: {
-        id: number;
-        iconId: string;
-        name: string;
-    }[],
+    skillsData: SkillsData[],
     skillsButtonData: Array<string>,
+    projectData: ProjectData[];
 }
 
 export function Main(props: MainPropsType) {
@@ -20,7 +18,10 @@ export function Main(props: MainPropsType) {
             <SkillsSection
                 skillsData={props.skillsData}
             />
-            <ProjectSection skillsButtonData={props.skillsButtonData}/>
+            <ProjectSection
+                skillsButtonData={props.skillsButtonData}
+                projectData={props.projectData}
+            />
         </main>
     );
 }
