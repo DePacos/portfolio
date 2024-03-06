@@ -14,8 +14,6 @@ export function MainPhoto() {
 
 const StyledPhoto = styled.div
     `
-    padding: 42px 0;
-
     img {
         width: 400px;
         height: 400px;

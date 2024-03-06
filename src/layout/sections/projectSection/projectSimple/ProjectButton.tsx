@@ -8,7 +8,7 @@ type ProjectButtonPropsType = {
 
 export function ProjectButton(props: ProjectButtonPropsType) {
     return (
-        <StyledProjectButtonList>
+        <StyledProjectButtonList skillsButtonData={props.skillsButtonData}>
             {props.skillsButtonData.map((name => {return(
              <li><StyledProjectButton>{name}</StyledProjectButton></li>
             )}))}
@@ -16,11 +16,12 @@ export function ProjectButton(props: ProjectButtonPropsType) {
     );
 }
 
-const StyledProjectButtonList = styled.ul
+const StyledProjectButtonList = styled.ul<ProjectButtonPropsType>
     `
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(${props => props.skillsButtonData.length}, 1fr);
         justify-items: center;
+        margin-bottom: 55px;
     `
 
 const StyledProjectButton = styled(StyledButton)
@@ -28,9 +29,17 @@ const StyledProjectButton = styled(StyledButton)
         font-family: Roboto-Regular;
         font-size: 20px;
         line-height: 27px;
-        width: 153px;
-        height: 36px;
+        text-transform: capitalize;
+        width: 159px;
+        height: 42px;
         border: 3px solid #4c546c;
         border-radius: 67px;
         background-color: #222222;
+        cursor: pointer;
+        transition: all .4s;
+        
+        &:hover{
+            background-color: #24335c;
+            border: 3px solid #24335c;
+        }
     `

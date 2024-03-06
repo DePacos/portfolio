@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle
 }
 
 *{box-sizing: border-box; color: ${glTheme.colors.font};}
-.App{max-width: 1440px; margin: auto; background-color: ${glTheme.colors.bgBodyDark};}
+.App{background-color: ${glTheme.colors.bgBodyDark};}
 a{text-decoration: none}
 ul{list-style: none;}
 
