@@ -17,12 +17,13 @@ export function ProjectSection(props: ProjectSectionPropsType) {
             <StyledTitle>Project</StyledTitle>
             <ProjectButton skillsButtonData={props.skillsButtonData}/>
             <ProjectSimple projectData={props.projectData}/>
-        </StyledProjectSection >
+        </StyledProjectSection>
     );
 }
 
 const StyledProjectSection = styled.section
     `  max-width: 1200px;
        margin: 0 auto;
+       margin-bottom: 15px;
     `
 

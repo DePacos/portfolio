@@ -13,9 +13,6 @@ export function MainSection(props) {
       <StyledWrapSection>
         <StyledWrapGrid>
           <StyledWrap>
-            <StyledWrapIconCross>
-              <Icon iconId={'crossDark'} size={'107'} viewBox={'0 0 107 107'}/>
-            </StyledWrapIconCross>
             <MainPhoto/>
           </StyledWrap>
           <StyledWrap>
@@ -47,34 +44,35 @@ const StyledWrapSection = styled.div
       max-width: 1200px;
       margin: 0 auto;
       background: url(${ellipse}) no-repeat bottom right;
+      &::before{
+          content: '';
+          display: block;
+          position: absolute;
+          top: -85px;
+          background: url(${cross}) no-repeat right;
+          width: 460px;
+          height: 107px;
+      }
   `
 
 const StyledWrapGrid = styled.div
   `
-      display: grid;
-      justify-items: center;
-      grid-template-columns: 1fr 1fr;
-      backdrop-filter: blur(8px);
       position: relative;
-      z-index: 1;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       justify-items: center;
+      align-items: center;
       padding: 42px 0;
+      backdrop-filter: blur(8px);
       background: linear-gradient(0deg, rgba(57, 57, 57, .5), rgba(0, 66, 255, .05));
       border: 2px solid rgba(85, 96, 128, 1);
       border-radius: 200px 0;
+      z-index: 1;
   `
 
 const StyledWrap = styled.div
   `
       position: relative;
-  `
-
-const StyledWrapIconCross = styled.div
-  `
-      position: absolute;
-      right: 90px;
-      top: -130px;
   `
 
 const StyledWrapLink = styled.div
