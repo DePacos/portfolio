@@ -10,9 +10,9 @@ type SocialPropsType={
 export const Social = (props: SocialPropsType) => {
     return (
         <StyledSocial position={props.position}>
-            <li><a href="#"><img src={props.iconLink1} alt={"Social-Instagram"}/></a></li>
-            <li><a href="#"><img src={props.iconLink2} alt={"Social-WhatsApp"}/></a></li>
-            <li><a href="#"><img src={props.iconLink3} alt={"Social-Telegram"}/></a></li>
+            <li><a href="/#"><img src={props.iconLink1} alt={"Social-Instagram"}/></a></li>
+            <li><a href="/#"><img src={props.iconLink2} alt={"Social-WhatsApp"}/></a></li>
+            <li><a href="/#"><img src={props.iconLink3} alt={"Social-Telegram"}/></a></li>
         </StyledSocial>
     );
 };

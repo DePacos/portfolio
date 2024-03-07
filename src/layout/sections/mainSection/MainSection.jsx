@@ -7,7 +7,7 @@ import styled from "styled-components";
 import ellipse from '../../../assets/icon/ellipse.svg'
 import cross from '../../../assets/icon/cross.svg'
 
-export function MainSection(props) {
+export function MainSection() {
   return (
     <StyledSection>
       <StyledWrapSection>
@@ -85,7 +85,7 @@ const StyledWrapLink = styled.div
 
 const StyledProjButton = styled(StyledButton)
   `
-      font-family: Roboto-Medium;
+      font-family: Roboto-Medium, serif;
       font-size: 15px;
       line-height: 22px;
       display: grid;
@@ -105,7 +105,7 @@ const StyledProjButton = styled(StyledButton)
 
 const StyledLink = styled.a
   `
-      font-family: Roboto-Medium;
+      font-family: Roboto-Medium, serif;
       font-size: 16px;
       line-height: 24px;
       color: #6c92ff;

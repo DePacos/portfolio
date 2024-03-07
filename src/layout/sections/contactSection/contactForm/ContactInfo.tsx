@@ -7,7 +7,7 @@ export function ContactInfo() {
     return (
         <StyledContactInfo>
             <ul>
-                <li><a href={"#"}>Location <span>Mashhad/Iran</span></a></li>
+                <li><a href={"/#"}>Location <span>Mashhad/Iran</span></a></li>
                 <li><a href={"tel:989150063913"}>Phone <span>+989150063913</span></a></li>
                 <li><a href={"mailto:example@mail.com"}>Email <span>example@mail.com</span></a></li>
             </ul>
@@ -22,7 +22,7 @@ const StyledContactInfo = styled.div
             gap: 35px;
         }
         li{
-            font-family: Roboto-Bold;
+            font-family: Roboto-Bold, serif;
             font-size: 16px;
             line-height: 22px;
             padding-left: 60px;
@@ -38,7 +38,7 @@ const StyledContactInfo = styled.div
         }
         
         span{
-            font-family: Roboto-Regular;
+            font-family: Roboto-Regular, serif;
             font-size: 12px;
             line-height: 16px;
             color: #8b8b8b;

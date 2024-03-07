@@ -24,7 +24,7 @@ const StyledForm = styled.form
         input,
         textarea
         {
-            font-family: Roboto-Regular;
+            font-family: Roboto-Regular, serif;
             font-size: 13px;
             line-height: 17px;
             padding-left: 25px;
@@ -49,7 +49,7 @@ const StyledForm = styled.form
     `
 const StyledFormTitle = styled.h3
     `
-        font-family: Roboto-Bold;
+        font-family: Roboto-Bold, serif;
         font-size: 36px;
         line-height: 49px;
         margin-bottom: 23px;
@@ -63,7 +63,7 @@ const StyledWrapInput = styled.div
     `
 const StyledFormButton = styled(StyledButton)
 `
-    font-family: Roboto-Medium;
+    font-family: Roboto-Medium, serif;
     font-size: 16px;
     line-height: 22px;
     display: block;
