@@ -1,6 +1,7 @@
 import {Header} from "./layout/header/Header";
 import {Main} from "./layout/sections/Main";
 import styled from "styled-components";
+import {Footer} from "./layout/footer/Footer";
 
 export type MenuData = {
     id: number;
@@ -40,6 +41,7 @@ export function App(props: appPropsType) {
                     skillsButtonData={props.dataBase.skillsButtonData}
                     projectData={props.dataBase.projectData}
                 />
+                <Footer/>
             </StyledContainer>
         </div>
     );
