@@ -28,3 +28,15 @@
   url("./Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
+@font-face {
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular"),
+  url("./Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: local("Inter-Bold"),
+  url("./Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
