@@ -6,12 +6,13 @@ export function ContactForm() {
     return (
         <>
             <StyledForm>
-            <StyledFormTitle>Get in touch</StyledFormTitle>
+                <StyledFormTitle>Get in touch</StyledFormTitle>
                 <StyledWrapInput>
                     <input type={"email"} placeholder={"Email"}/>
                     <input placeholder={"Phone"}/>
                 </StyledWrapInput>
-                <textarea>Message</textarea>
+                <label hidden id="message">Message</label>
+                <textarea  aria-labelledby="message" placeholder="Message"/>
                 <StyledFormButton type={"submit"}>Send</StyledFormButton>
             </StyledForm>
         </>
@@ -21,9 +22,9 @@ export function ContactForm() {
 const StyledForm = styled.form
     `
         max-width: 430px;
+
         input,
-        textarea
-        {
+        textarea {
             font-family: Roboto-Regular, serif;
             font-size: 13px;
             line-height: 17px;
@@ -32,20 +33,21 @@ const StyledForm = styled.form
             background-color: #393838;
             border: none;
             border-radius: 9px;
-        };
-        
-        input::placeholder{
+        }
+    ;
+
+        input::placeholder {
             color: #a5a5a5;
         }
-        
-        textarea{
+
+        textarea {
             width: 100%;
             height: 152px;
             margin-bottom: 35px;
             padding-top: 17px;
             color: #a5a5a5;
         }
-        
+
     `
 const StyledFormTitle = styled.h3
     `
@@ -62,17 +64,18 @@ const StyledWrapInput = styled.div
         margin-bottom: 25px;
     `
 const StyledFormButton = styled(StyledButton)
-`
-    font-family: Roboto-Medium, serif;
-    font-size: 16px;
-    line-height: 22px;
-    display: block;
-    width: 117px;
-    height: 43px;
-    border-radius: 9px;
-    cursor: pointer;
-    transition: transform .4s;
-    &:hover{
-        transform: scale(1.05);
-    }
-`
+    `
+        font-family: Roboto-Medium, serif;
+        font-size: 16px;
+        line-height: 22px;
+        display: block;
+        width: 117px;
+        height: 43px;
+        border-radius: 9px;
+        cursor: pointer;
+        transition: transform .4s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    `
