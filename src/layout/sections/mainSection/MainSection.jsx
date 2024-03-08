@@ -22,7 +22,7 @@ export function MainSection() {
                 See Projects
                 <Icon iconId={'arrowRight'} size={'28'} viewBox={'0 0 28 28'}/>
               </StyledProjButton>
-              <StyledLink>Download Resume</StyledLink>
+              <StyledLink href={"/#"}>Download Resume</StyledLink>
             </StyledWrapLink>
           </StyledWrap>
         </StyledWrapGrid>

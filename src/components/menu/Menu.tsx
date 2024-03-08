@@ -30,7 +30,7 @@ const StyledMenu = styled.nav
     a{
         display: block;
         font-family: Roboto-Regular;
-        font-size: 16px;
+        font-size: calc((100vw - 320px) / (1920 - 320) * (16 - 8) + 8px);
         color: ${({theme})=> theme.colors.font};
         transition: transform .4s;
     } 
