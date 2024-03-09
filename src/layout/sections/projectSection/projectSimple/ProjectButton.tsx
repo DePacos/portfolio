@@ -26,8 +26,9 @@ const StyledProjectButtonList = styled.ul<ProjectButtonPropsType>
 
 const StyledProjectButton = styled(StyledButton)
     `
-        font-family: Roboto-Regular;
+        font-family: Roboto, sans-serif;
         font-size: 20px;
+        font-weight: 400;
         line-height: 27px;
         text-transform: capitalize;
         width: 159px;

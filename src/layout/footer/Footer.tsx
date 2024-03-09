@@ -22,14 +22,16 @@ const StyledFooter = styled.footer
         display: block;
     }
     span:nth-child(1){
-        font-family: Inter-Bold, serif;
+        font-family: Inter, sans-serif;
         font-size: 16px;
+        font-weight: 700;
         line-height: 19px;
         margin-bottom: 7px;
     }
     span:nth-child(2){
-        font-family: Inter-Regular, serif;
+        font-family: Inter, serif;
         font-size: 11px;
+        font-weight: 400;
         line-height: 14px;
     }
 `

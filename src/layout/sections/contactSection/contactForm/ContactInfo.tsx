@@ -22,8 +22,9 @@ const StyledContactInfo = styled.div
             gap: 35px;
         }
         li{
-            font-family: Roboto-Bold, serif;
+            font-family: Roboto, sans-serif;
             font-size: 16px;
+            font-weight: 700;
             line-height: 22px;
             padding-left: 60px;
         }
@@ -38,8 +39,9 @@ const StyledContactInfo = styled.div
         }
         
         span{
-            font-family: Roboto-Regular, serif;
+            font-family: Roboto, sans-serif;
             font-size: 12px;
+            font-weight: 400;
             line-height: 16px;
             color: #8b8b8b;
             display: block;

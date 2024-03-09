@@ -25,8 +25,9 @@ const StyledForm = styled.form
 
         input,
         textarea {
-            font-family: Roboto-Regular, serif;
+            font-family: Roboto, sans-serif;
             font-size: 13px;
+            font-weight: 400;
             line-height: 17px;
             padding-left: 25px;
             height: 36px;
@@ -34,9 +35,9 @@ const StyledForm = styled.form
             border: none;
             border-radius: 9px;
         }
-    ;
 
-        input::placeholder {
+        input::placeholder,
+        textarea::placeholder{
             color: #a5a5a5;
         }
 
@@ -45,14 +46,14 @@ const StyledForm = styled.form
             height: 152px;
             margin-bottom: 35px;
             padding-top: 17px;
-            color: #a5a5a5;
         }
 
     `
 const StyledFormTitle = styled.h3
     `
-        font-family: Roboto-Bold, serif;
+        font-family: Roboto, sans-serif;
         font-size: 36px;
+        font-weight: 700;
         line-height: 49px;
         margin-bottom: 23px;
     `
@@ -65,8 +66,9 @@ const StyledWrapInput = styled.div
     `
 const StyledFormButton = styled(StyledButton)
     `
-        font-family: Roboto-Medium, serif;
+        font-family: Roboto, sans-serif;
         font-size: 16px;
+        font-weight: 500;
         line-height: 22px;
         display: block;
         width: 117px;

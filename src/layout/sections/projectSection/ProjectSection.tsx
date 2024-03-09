@@ -25,5 +25,6 @@ const StyledProjectSection = styled.section
     `  max-width: 1200px;
        margin: 0 auto;
        margin-bottom: 15px;
+        padding: 0 15px;
     `
 

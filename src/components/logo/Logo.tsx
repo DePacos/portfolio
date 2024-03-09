@@ -8,7 +8,8 @@ export const Logo = () => {
 
 const StyledLogo = styled.a
     `
-        font-family: Amita-Bold;
+        font-family: Amita, sans-serif;
         font-size: 60px;
+        font-weight: 700;
         line-height: 60px;
     `

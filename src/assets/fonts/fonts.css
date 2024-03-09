@@ -1,42 +1,63 @@
 @font-face {
-  font-family: "Amita-Bold";
-  src: local("Amita-Bold"),
+  font-family: "Amita";
+  src: local("Amita"),
+  url("./Amita-Bold.eot?") format("eot"),
+  url("./Amita-Bold.woff2") format("woff2"),
   url("./Amita-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Kalameh Bold";
-  src: local("Kalameh Bold"),
+  font-family: "Kalameh";
+  src: local("Kalameh"),
+  url("./Kalameh-Bold.eot?") format("eot"),
+  url("./Kalameh-Bold.woff2") format("woff2"),
   url("./Kalameh Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Roboto-Bold";
-  src: local("Roboto-Bold"),
+  font-family: "Roboto";
+  src: local("Roboto"),
+  url("./Roboto-Bold.eot?") format("eot"),
+  url("./Roboto-Bold.woff2") format("woff2"),
   url("./Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Roboto-Medium";
-  src: local("Roboto-Medium"),
+  font-family: "Roboto";
+  src: local("Roboto"),
+  url("./Roboto-Medium.eot?") format("eot"),
+  url("./Roboto-Medium.woff2") format("woff2"),
   url("./Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Roboto-Regular";
-  src: local("Roboto-Regular"),
+  font-family: "Roboto";
+  src: local("Roboto"),
+  url("./Roboto-Regular.eot?") format("eot"),
+  url("./Roboto-Regular.woff2") format("woff2"),
   url("./Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Inter-Regular";
-  src: local("Inter-Regular"),
+  font-family: "Inter";
+  src: local("Inter"),
+  url("./Inter-Regular.eot?") format("eot"),
+  url("./Inter-Regular.woff2") format("woff2"),
   url("./Inter-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Inter-Bold";
-  src: local("Inter-Bold"),
+  font-family: "Inter";
+  src: local("Inter"),
+  url("./Inter-Bold.eot?") format("eot"),
+  url("./Inter-Bold.woff2") format("woff2"),
   url("./Inter-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
 }

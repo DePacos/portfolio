@@ -49,8 +49,9 @@ const StyledSkillSimple = styled.ul
         }
 
         span {
-            font-family: Roboto-Bold;
+            font-family: Roboto, sans-serif;
             font-size: 18px;
+            font-weight: 700;
             line-height: 27px;
             text-transform: uppercase;
             display: grid;

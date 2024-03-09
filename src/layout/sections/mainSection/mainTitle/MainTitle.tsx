@@ -16,15 +16,17 @@ export function MainTitle() {
 
 const StyledTitle = styled.h1
     `
-        font-family: Roboto-Bold;
+        font-family: Roboto, sans-serif;
         font-size: 34px;
+        font-weight: 700;
         margin-bottom: 40px;
     `
 
 const StyledSpan = styled.span
 `
-    font-family: Roboto-Medium;
+    font-family: Roboto, sans-serif;
     font-size: 24px;
+    font-weight: 500;
 
     > span {
         display: block;
@@ -34,6 +36,6 @@ const StyledSpan = styled.span
 `
 
 const StyledName = styled.span`
-    color: #2157f2;
+    color: ${({theme}) => theme.colors.bgButton};
         
 `

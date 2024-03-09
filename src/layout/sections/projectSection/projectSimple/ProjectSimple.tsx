@@ -52,8 +52,9 @@ const StyledProjectSimple = styled.ul
         }
 
         h3 {
-            font-family: "Kalameh Bold";
+            font-family: Kalameh, sans-serif;
             font-size: 22px;
+            font-weight: 700;
             line-height: 30px;
             max-width: 204px;;
             margin: 17px auto 25px auto;
@@ -71,8 +72,9 @@ const StyledWrapLinks = styled.div
 
 const StyledProjectButton = styled(StyledButton)
     `
-        font-family: Roboto-Bold;
+        font-family: Roboto, sans-serif;
         font-size: 14px;
+        font-weight: 700;
         line-height: 20px;
         width: 109px;
         height: 29px;
@@ -90,8 +92,9 @@ const StyledProjectButton = styled(StyledButton)
 
 const StyledLink = styled.a
     `
-        font-family: Roboto-Regular;
+        font-family: Roboto, sans-serif;
         font-size: 14px;
+        font-weight: 400;
         line-height: 20px;
         color: #a6bcfa;
         transition: color 0.4s;

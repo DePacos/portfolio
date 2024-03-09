@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const StyledTitle = styled.h2
 `
-    font-family: Roboto-Bold;
+    font-family: Roboto, sans-serif;
     font-size: 32px;
+    font-weight: 700;
     line-height: 43px;
     text-align: center;
     margin-bottom: 60px;
