@@ -13,21 +13,28 @@ export type HeaderPropsType = {
 export const Header = (props: HeaderPropsType) => {
     return (
         <StyledHeader>
-            <Logo/>
-            <Menu menuData={props.menuData}/>
-            <Icon iconId={'moon'} size={'36'} viewBox={'0 0 90 90'}/>
+            <StyledContainer>
+                <Logo/>
+                <Menu menuData={props.menuData}/>
+                <Icon iconId={'moon'} size={'36'} viewBox={'0 0 90 90'}/>
+            </StyledContainer>
         </StyledHeader>
 
     );
 };
 
-const StyledHeader = styled.header
+const StyledContainer = styled.div
     `
         display: grid;
         grid-template-columns: 70px 1fr 36px;
         align-items: center;
         justify-items: end;
-        padding: 35px 40px 75px 40px;
-        background: linear-gradient(90deg, rgba(36, 51, 92, 1) 30%, rgba(255, 255, 255, 0) 30%);
+        max-width: 1360px;
+        margin: auto;
+        padding: 35px 0 75px 0;
 
+    `
+const StyledHeader = styled.header
+    `   padding: 0 15px;
+        background: ${({theme}) => theme.colors.bgHeaderDark};
     `

@@ -24,5 +24,6 @@ const StyledSection = styled.section
     `   
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0 15px;
         background: url(${dots}) no-repeat left center;
     `

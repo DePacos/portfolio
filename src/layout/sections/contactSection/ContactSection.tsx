@@ -26,6 +26,7 @@ export function ContactSection() {
 const StyledContactSection = styled.section
     `
         margin-bottom: 65px;
+        padding: 0 15px;
     `
 
 const StyledWrapForm = styled.div
