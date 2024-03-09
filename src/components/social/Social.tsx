@@ -5,7 +5,8 @@ type SocialPropsType={
     iconLink1?: string
     iconLink2?: string
     iconLink3?: string
-    position?: string
+    position?: string,
+    color?: string
 }
 export const Social = (props: SocialPropsType) => {
     return (
@@ -36,7 +37,7 @@ const StyledSocial = styled.ul<SocialPropsType>
         ${props => props.position === 'main' && css <SocialPropsType>
                 `
                     grid-template-columns: auto;
-                    background-color: #24335c;
+                    background-color: ${({theme}) => theme.colors.bgIcon};
                     justify-content: start;
                     width: max-content;
                     padding: 24px 14px;

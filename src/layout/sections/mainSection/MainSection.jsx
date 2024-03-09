@@ -33,8 +33,8 @@ export function MainSection() {
 
 const StyledSection = styled.section
   `
-      background: linear-gradient(90deg, rgba(36, 51, 92, 1) 30%, rgba(255, 255, 255, 0) 30%);
-      padding: 0 40px 20px 40px;
+      background: ${({theme}) => theme.colors.bgHeaderDark};
+      padding: 0 15px 20px 15px;
       margin-bottom: 40px;
   `
 
@@ -64,8 +64,8 @@ const StyledWrapGrid = styled.div
       align-items: center;
       padding: 42px 0;
       backdrop-filter: blur(8px);
-      background: linear-gradient(0deg, rgba(57, 57, 57, .5), rgba(0, 66, 255, .05));
-      border: 2px solid rgba(85, 96, 128, 1);
+      background: ${({theme}) => theme.colors.bgMainTitleDark};
+      border: 2px solid ${({theme}) => theme.colors.bgMainBorderDark};
       border-radius: 200px 0;
       z-index: 1;
   `
@@ -85,8 +85,9 @@ const StyledWrapLink = styled.div
 
 const StyledProjButton = styled(StyledButton)
   `
-      font-family: Roboto-Medium, serif;
+      font-family: Roboto, sans-serif;
       font-size: 15px;
+      font-width: 500;
       line-height: 22px;
       display: grid;
       grid-template-columns: 1fr 28px;
@@ -94,7 +95,7 @@ const StyledProjButton = styled(StyledButton)
       gap: 14px;
       padding: 13px 36px;
       border-radius: 20px;
-      background-color: #2157f2;
+      background-color: ${({theme}) => theme.colors.bgButton};
       transition: transform 0.4s;
       cursor: pointer;
 
@@ -105,14 +106,15 @@ const StyledProjButton = styled(StyledButton)
 
 const StyledLink = styled.a
   `
-      font-family: Roboto-Medium, serif;
+      font-family: Roboto, sans-serif;
       font-size: 16px;
+      font-weight: 500;
       line-height: 24px;
-      color: #6c92ff;
+      color: ${({theme}) => theme.colors.linkMain};
       cursor: pointer;
       transition: color 0.4s;
 
       &:hover {
-          color: #a6bcfa;
+          color: ${({theme}) => theme.colors.linkMainHover};
       }
   `

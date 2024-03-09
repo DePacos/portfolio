@@ -29,9 +29,10 @@ const StyledMenu = styled.nav
     }
     a{
         display: block;
-        font-family: Roboto-Regular;
+        font-family: Roboto, sans-serif;
         font-size: calc((100vw - 320px) / (1920 - 320) * (16 - 8) + 8px);
-        color: ${({theme})=> theme.colors.font};
+        font-weight: 400;
+        color: ${({theme})=> theme.colors.fontLight};
         transition: transform .4s;
     } 
     a:hover{
