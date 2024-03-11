@@ -36,6 +36,7 @@ const StyledSection = styled.section
       background: ${({theme}) => theme.colors.bgHeaderDark};
       padding: 0 15px 20px 15px;
       margin-bottom: 40px;
+      padding-top: 170px;
   `
 
 const StyledWrapSection = styled.div
@@ -48,7 +49,8 @@ const StyledWrapSection = styled.div
           content: '';
           display: block;
           position: absolute;
-          top: -85px;
+          z-index: 3;
+          top: -90px;
           background: url(${cross}) no-repeat right;
           width: 460px;
           height: 107px;
