@@ -7,6 +7,7 @@ import {ThemeProvider} from "styled-components";
 import {glTheme} from "./Styles/ThemeStyled";
 
 import './assets/fonts/fonts.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

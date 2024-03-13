@@ -14,7 +14,7 @@ export function ProjectSimple(props: ProjectSimpleTypeProps) {
             {props.projectData.map((e => {
                 return (
                     <li>
-                        <img src={e.image} alt="Project-Image"/>
+                        <img src={e.image} alt="project"/>
                         <div>
                             <h3>{e.title}</h3>
                             <StyledWrapLinks>
@@ -34,21 +34,29 @@ export default ProjectSimple;
 const StyledProjectSimple = styled.ul
     `
         display: grid;
-        gap: 40px;
-        grid-template-columns: repeat(4, 270px);
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 
         li {
+            display: grid;
+            grid-template-rows: 240px 1fr;
             border-radius: 26px;
             overflow: hidden;
             padding-bottom: 25px;
             margin-bottom: 45px;
             background-color: #353535;
+
+            & > :last-child {
+                display: grid;
+                align-content: space-between;
+            }
         }
 
         img {
             width: 100%;
             height: 240px;
             object-fit: cover;
+            aspect-ratio: 3 / 1;
         }
 
         h3 {
