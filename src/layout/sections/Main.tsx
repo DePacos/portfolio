@@ -10,6 +10,7 @@ import {Social} from "../../components/social/Social";
 import instagram from '../../assets/icon/insta-white.svg'
 import wa from '../../assets/icon/wa-white.svg'
 import telegram from '../../assets/icon/telegram-white.svg'
+import {TestimonialSection} from "./testimonialSection/TestimonialSection";
 
 type MainPropsType = {
     skillsData: SkillsData[],
@@ -28,6 +29,7 @@ export function Main(props: MainPropsType) {
                 skillsButtonData={props.skillsButtonData}
                 projectData={props.projectData}
             />
+            <TestimonialSection/>
             <ContactSection/>
             <Social position={'main'} iconLink1={instagram} iconLink2={wa} iconLink3={telegram}/>
         </main>
