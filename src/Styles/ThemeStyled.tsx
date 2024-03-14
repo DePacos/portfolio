@@ -15,5 +15,10 @@ export const glTheme = {
     fontDark: '#000',
     fontLight: '#fff',
     focusVisible: '#b97119',
+    },
+    media:{
+      mobile: 'screen and (max-width: 430px)',
+      tabletMax: 'screen and (max-width: 768px)',
+      tabletMin: 'screen and (min-width: 769px)',
     }
 }
