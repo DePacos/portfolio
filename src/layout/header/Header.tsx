@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
+import {DesktopMenu} from "../../components/menu/DesktopMenu";
 import {Icon} from "../../components/icons/Icon";
 import styled, {css} from "styled-components";
 
 import {MenuData} from "../../App";
+import {StyledButton} from "../../components/button/Button";
+import {MobileMenu} from "../../components/menu/MobileMenu";
 
 export type HeaderPropsType = {
     menuData: MenuData[];
@@ -28,14 +30,16 @@ export const Header = (props: HeaderPropsType) => {
         <StyledHeader offset={offset}>
             <StyledContainer>
                 <Logo/>
-                <Menu menuData={props.menuData}/>
-                <Icon iconId={'moon'} size={'36'} viewBox={'0 0 90 90'}/>
+                <DesktopMenu menuData={props.menuData}/>
+                <MobileMenu menuData={props.menuData}/>
+                <StyledChangeStyleBtn>
+                    <Icon iconId={'moon'} size={'36'} viewBox={'0 0 90 90'}/>
+                </StyledChangeStyleBtn>
             </StyledContainer>
         </StyledHeader>
 
     );
 };
-
 
 
 const StyledContainer = styled.div
@@ -48,6 +52,16 @@ const StyledContainer = styled.div
         margin: auto;
         padding: 35px 0 75px 0;
         
+        @media ${({theme}) => theme.media.tabletMax} {
+            justify-items: center;
+            padding: 10px 0;
+            & > a{
+                order: 1
+            }
+            & > button{
+                order: 2
+            }
+        }
     `
 const StyledHeader = styled.header<StyledHeaderPropsType>
     `   padding: 0 15px;
@@ -64,7 +78,10 @@ const StyledHeader = styled.header<StyledHeaderPropsType>
             transition: all 0.5s;
         }
 
-    
+        @media ${({theme}) => theme.media.tabletMax} {
+            z-index: 5;
+        }
+        
     ${props => props.offset > 80 && css <StyledHeaderPropsType>
         `
                 border-radius: 0 0 20px 20px;
@@ -73,5 +90,9 @@ const StyledHeader = styled.header<StyledHeaderPropsType>
             }
         `
 }
-        
     `
+
+const StyledChangeStyleBtn = styled(StyledButton)
+`
+    background-color: transparent;
+`
