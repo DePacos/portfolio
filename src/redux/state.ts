@@ -7,7 +7,8 @@ export const dataBase = {
         {id: 1, name: 'Home', link: '#'},
         {id: 2, name: 'Skills', link: '#'},
         {id: 3, name: 'Projects', link: '#'},
-        {id: 4, name: 'Contact', link: '#'},
+        {id: 4, name: 'Testimonial', link: '#'},
+        {id: 5, name: 'Contact', link: '#'},
     ],
     skillsData: [
         {id: 1, iconId: 'htmlIcon', name: 'html'},
