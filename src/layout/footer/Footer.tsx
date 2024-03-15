@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import footerBg from '../../assets/icon/footer-bg.svg'
 export function Footer() {
     return (
         <StyledFooter>
@@ -16,8 +15,8 @@ const StyledFooter = styled.footer
     align-content: end;
     text-align: center;
     height: 240px;
-    padding-bottom: 75px;
-    background: url(${footerBg}) no-repeat, linear-gradient(0deg,rgba(36,51,92,1) 40%,rgba(255,255,255,0) 10%);
+    background: ${({theme}) => theme.bg.footerBgImg};
+    background-position: center;
     span{
         display: block;
     }
@@ -27,11 +26,21 @@ const StyledFooter = styled.footer
         font-weight: 700;
         line-height: 19px;
         margin-bottom: 7px;
+        color: ${({theme}) => theme.colors.fontLight};
     }
     span:nth-child(2){
         font-family: Inter, serif;
         font-size: 11px;
         font-weight: 400;
         line-height: 14px;
+        margin-bottom: 75px;
+        color: ${({theme}) => theme.colors.fontLight};
+    }
+    @media ${({theme}) => theme.media.tabletMax}{
+        height: 150px;
+        span:nth-child(2){
+            margin-bottom: 40px;
+        }
+        
     }
 `
