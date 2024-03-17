@@ -2,6 +2,12 @@ import {Header} from "./layout/header/Header";
 import {Main} from "./layout/sections/Main";
 import styled from "styled-components";
 import {Footer} from "./layout/footer/Footer";
+import React, {Component} from "react";
+
+import {ThemeProvider} from "styled-components";
+import {glThemeDark} from "./Styles/ThemeDark";
+import {glThemeLight} from "./Styles/ThemeLight";
+
 
 export type MenuData = {
     id: number;
@@ -22,7 +28,7 @@ export type ProjectData = {
     link: string;
 }
 
-type appPropsType = {
+type AppPropsType = {
     dataBase: {
         menuData: MenuData[],
         skillsData: SkillsData[],
@@ -31,24 +37,43 @@ type appPropsType = {
     }
 }
 
-export function App(props: appPropsType) {
-    return (
-        <div className="App">
-            <StyledContainer>
-                <Header menuData={props.dataBase.menuData}/>
-                <Main
-                    skillsData={props.dataBase.skillsData}
-                    skillsButtonData={props.dataBase.skillsButtonData}
-                    projectData={props.dataBase.projectData}
-                />
-                <Footer/>
-            </StyledContainer>
-        </div>
-    );
+type AppStateType = {
+    theme: boolean
 }
 
-const StyledContainer = styled.div
+export class App extends Component<AppPropsType, AppStateType> {
+    constructor(props: AppPropsType) {
+        super(props);
+
+    this.state = {
+        theme: false,
+        }
+    }
+
+    changeTheme = () =>{
+        this.setState({theme: !this.state.theme})
+    }
+
+    render() {
+        return (
+            <ThemeProvider theme={this.state.theme ? glThemeLight : glThemeDark}>
+                <StyledApp className="App">
+                    <div className="main-container">
+                        <Header menuData={this.props.dataBase.menuData} changeTheme={this.changeTheme}/>
+                        <Main
+                            skillsData={this.props.dataBase.skillsData}
+                            skillsButtonData={this.props.dataBase.skillsButtonData}
+                            projectData={this.props.dataBase.projectData}
+                        />
+                        <Footer/>
+                    </div>
+                </StyledApp>
+            </ThemeProvider>
+        );
+    }
+}
+
+const StyledApp = styled.div
     `
-        max-width: 1440px;
-        margin: 0 auto;
+        background-color: ${({theme}) => theme.bg.bgColor};
     `
