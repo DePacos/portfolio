@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button
+export const Button = styled.button
     `
         border: none;
-        background-color: ${({theme}) =>theme.colors.bgButton};
+        background-color: ${({theme}) =>theme.bg.bgButton};
         cursor: pointer;
     `
