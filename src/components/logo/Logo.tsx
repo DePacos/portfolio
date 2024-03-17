@@ -1,15 +1,10 @@
 import React from 'react';
-import styled from "styled-components";
-export const Logo = () => {
+import {S} from "./Logo-Styles";
+
+export const Logo: React.FC = () => {
     return (
-        <StyledLogo href="#">GL</StyledLogo>
+        <S.Logo href="#">GL</S.Logo>
     );
 };
 
-const StyledLogo = styled.a
-    `
-        font-family: Amita, sans-serif;
-        font-size: calc((100vw - 320px) / (1920 - 320) * (60 - 40) + 40px);
-        font-weight: 700;
-        line-height: 60px;
-    `
+

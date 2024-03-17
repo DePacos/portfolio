@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import {S} from "./ContactSection-Styles";
 import {StyledTitle} from "../../../components/title/Title";
 import {ContactForm} from "./contactForm/ContactForm";
 import {ContactInfo} from "./contactForm/ContactInfo";
@@ -12,31 +12,17 @@ import telegram from "../../../assets/icon/telegram-color.svg"
 
 export function ContactSection() {
     return (
-        <StyledContactSection>
+        <S.ContactSection>
             <StyledTitle>Contact</StyledTitle>
-            <StyledWrapForm>
+            <S.WrapForm>
                 <ContactForm/>
                 <ContactInfo/>
-            </StyledWrapForm>
+            </S.WrapForm>
             <Social iconLink1={instagram} iconLink2={wa} iconLink3={telegram} />
-        </StyledContactSection>
+        </S.ContactSection>
     );
 }
 
-const StyledContactSection = styled.section
-    `
-        margin-bottom: 65px;
-        padding: 0 15px;
-    `
 
-const StyledWrapForm = styled.div
-    `
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 125px;
-        align-items: center;
-        max-width: 930px;
-        margin: 0 auto 120px auto;
-        padding: 50px 80px;
-        background-color: #2c2b2b;
-    `
+
+

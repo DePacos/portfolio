@@ -1,25 +1,13 @@
 import React from 'react';
 import photo from '../../../../assets/images/photo-0.webp'
-import styled from "styled-components";
+import {S} from "./MainPhoto-Styles";
 
-export function MainPhoto() {
+export const MainPhoto: React.FC = () => {
     return (
         <>
-        <StyledPhoto>
+        <S.MainPhoto>
             <img src={photo} alt="Portfolio-Foto"/>
-        </StyledPhoto>
+        </S.MainPhoto>
         </>
     );
 }
-
-const StyledPhoto = styled.div
-    `
-    img {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        border: 25px solid #fff;
-        border-radius: 50%;
-    }
-`
-//

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import {S} from "./SkillSimple-Styles";
 import {Icon} from "../../../../components/icons/Icon";
 
 import {SkillsData} from "../../../../App";
@@ -8,10 +8,10 @@ type SkillSimplePropsType = {
     skillsData: SkillsData[],
 }
 
-export function SkillSimple(props: SkillSimplePropsType) {
+export const SkillSimple: React.FC<SkillSimplePropsType> = (props: SkillSimplePropsType) => {
 
     return (
-        <StyledSkillSimple>
+        <S.SkillSimple>
             {props.skillsData.map((e) => {
 
                 let iconSize = '100'
@@ -33,43 +33,6 @@ export function SkillSimple(props: SkillSimplePropsType) {
                     </li>
                 )
             })}
-        </StyledSkillSimple>
+        </S.SkillSimple>
     );
 }
-
-const StyledSkillSimple = styled.ul
-    `
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        justify-items: center;
-        text-align: center;
-
-        li {
-            margin-bottom: 60px;
-        }
-
-        span {
-            font-family: Roboto, sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 27px;
-            text-transform: uppercase;
-            display: grid;
-            align-items: center;
-            width: 161px;
-            height: 91px;
-            border-radius: 24px;
-            padding-top: 22px;
-            background-color: ${({theme}) => theme.colors.bgIcon};
-        }
-
-        svg {
-            width: max-content;
-            background-color: #173f5f;
-            border-radius: 50%;
-            border: 10px solid #222;
-            position: relative;
-            padding: 10px;
-            bottom: -30px;
-        }
-    `

@@ -1,41 +1,15 @@
 import React from 'react';
-import styled from "styled-components";
+import {S} from "./MainTitle-Styles";
 
-export function MainTitle() {
+export const MainTitle: React.FC = () => {
     return (
         <>
-            <StyledSpan>Hi There
+            <S.Wrap>Hi There
                 <span> I am
-                    <StyledName> Gregory Lazarev</StyledName>
+                    <S.Name> Gregory Lazarev</S.Name>
                 </span>
-            </StyledSpan>
-            <StyledTitle>A Frontend Developer</StyledTitle>
+            </S.Wrap>
+            <S.MainTitle>A Frontend Developer</S.MainTitle>
         </>
     );
 }
-
-const StyledTitle = styled.h1
-    `
-        font-family: Roboto, sans-serif;
-        font-size: 34px;
-        font-weight: 700;
-        margin-bottom: 40px;
-    `
-
-const StyledSpan = styled.span
-`
-    font-family: Roboto, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-
-    > span {
-        display: block;
-        font-size: 50px;
-    }
-
-`
-
-const StyledName = styled.span`
-    color: ${({theme}) => theme.colors.bgButton};
-        
-`

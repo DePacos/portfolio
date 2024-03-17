@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from "styled-components";
+import {S} from "./ProjectSection-Styles";
 import {StyledTitle} from "../../../components/title/Title";
-import ProjectSimple from "./projectSimple/ProjectSimple";
+import {ProjectSimple} from "./projectSimple/ProjectSimple";
 import {ProjectButton} from "./projectSimple/ProjectButton";
 
 import {ProjectData} from "../../../App";
@@ -11,20 +11,13 @@ type ProjectSectionPropsType = {
     projectData: ProjectData[];
 }
 
-export function ProjectSection(props: ProjectSectionPropsType) {
+export const ProjectSection: React.FC<ProjectSectionPropsType> = (props: ProjectSectionPropsType) => {
     return (
-        <StyledProjectSection>
+        <S.ProjectSection>
             <StyledTitle>Project</StyledTitle>
             <ProjectButton skillsButtonData={props.skillsButtonData}/>
             <ProjectSimple projectData={props.projectData}/>
-        </StyledProjectSection>
+        </S.ProjectSection>
     );
 }
-
-const StyledProjectSection = styled.section
-    `  max-width: 1200px;
-       margin: 0 auto;
-       margin-bottom: 15px;
-        padding: 0 15px;
-    `
 

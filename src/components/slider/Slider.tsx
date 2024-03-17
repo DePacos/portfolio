@@ -1,9 +1,9 @@
 import React from 'react';
 import {Carousel} from "react-responsive-carousel";
-import styled from "styled-components";
+import {S} from "./Slider-Styles";
 
 import testimonialPhoto from '../../assets/images/testi-face.webp'
-export function Slider() {
+export const Slider: React.FC = () => {
     return (
         <Carousel
             showArrows={false}
@@ -13,49 +13,27 @@ export function Slider() {
             infiniteLoop={true}
             interval={5000}
         >
-            <StyledWrapSlide>
+            <S.Slide>
                 <img src={testimonialPhoto} alt="Testimonial"/>
                 <span>Michal John</span>
                 <p>Quote testimonials demonstrate support for your product or feature from a user who has experience
                     with it. This can be significantly more effective than traditional advertising methods as most
                     consumers will trust.</p>
-            </StyledWrapSlide>
-            <StyledWrapSlide>
+            </S.Slide>
+            <S.Slide>
                 <img src={testimonialPhoto} alt="Testimonial"/>
                 <span>Michal John</span>
                 <p>Quote testimonials demonstrate support for your product or feature from a user who has experience
                     with it. This can be significantly more effective than traditional advertising methods as most
                     consumers will trust.</p>
-            </StyledWrapSlide>
-            <StyledWrapSlide>
+            </S.Slide>
+            <S.Slide>
                 <img src={testimonialPhoto} alt="Testimonial" />
                 <span>Michal John</span>
                 <p>Quote testimonials demonstrate support for your product or feature from a user who has experience
                     with it. This can be significantly more effective than traditional advertising methods as most
                     consumers will trust.</p>
-            </StyledWrapSlide>
+            </S.Slide>
         </Carousel>
     );
 }
-
-const StyledWrapSlide = styled.div
-`
-    margin-bottom: 60px;
-    span{
-        font-family: Roboto, sans-serif;
-        font-weight: 500;
-        font-size: 26px;
-        display: block;
-        margin-bottom: 10px;
-    }
-    .slider-wrapper & img{
-        width: 100px;
-        margin-bottom: 30px;
-        border-radius: 50%;
-    }
-    p{
-        font-family: Roboto, sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-    }
-`
