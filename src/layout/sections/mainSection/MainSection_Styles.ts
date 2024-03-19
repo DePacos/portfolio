@@ -109,7 +109,7 @@ const Link = styled.a
       transition: color 0.4s;
 
       &:hover {
-          color: ${({theme}) => theme.colors.linkMainHoverColor};
+          color: ${({theme}) => theme.colors.fontColor};
       }
   `
 export const S = {

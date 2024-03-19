@@ -17,7 +17,7 @@ export const glThemeLight = {
     bg:{
         bgColor: '#fff',
         bgButton: '#2157f2',
-        bgSocIcon: '#a5bbf8',
+        bgSocIcon: '#7389c9',
         bgMobileMenu: 'rgb(221, 230, 255, .95)',
         headerBg: `linear-gradient(90deg,rgba(168,188,250,1) 30%,rgba(255,255,255,1) 30%)`,
         bgMainTitle: 'linear-gradient(0deg, rgba(255, 255, 255, .5), rgba(0, 71, 255, .05))',

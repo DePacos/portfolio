@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle
     *:focus-visible {outline: 3px solid #b97119;}
     * {box-sizing: border-box; }
     
+    html{scroll-behavior: smooth; scroll-padding-top: 100px}
     body{font-family: Roboto, sans-serif; font-weight: 400;}
     a {text-decoration: none}
     ul {list-style: none;}
