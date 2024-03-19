@@ -28,12 +28,20 @@ export type ProjectData = {
     link: string;
 }
 
+export type TestimonialData = {
+    id: number;
+    name: string;
+    image: string;
+    testimonial: string;
+}
+
 type AppPropsType = {
     dataBase: {
         menuData: MenuData[],
         skillsData: SkillsData[],
         projectData: ProjectData[],
         skillsButtonData: Array<string>,
+        testimonialData: TestimonialData[],
     }
 }
 
@@ -64,6 +72,7 @@ export class App extends Component<AppPropsType, AppStateType> {
                             skillsData={this.props.dataBase.skillsData}
                             skillsButtonData={this.props.dataBase.skillsButtonData}
                             projectData={this.props.dataBase.projectData}
+                            testimonialData={this.props.dataBase.testimonialData}
                         />
                         <Footer/>
                     </div>
