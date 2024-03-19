@@ -1,11 +1,11 @@
 import React from 'react';
-import {S} from './Footer-Styles'
+import {S} from './Footer_Styles'
 
 export const Footer: React.FC = () => {
     return (
         <S.Footer>
-            <span>Coded by Gregory Lazarev</span>
-            <span>All Rights Reserved 2024</span>
+            <small>Coded by Gregory Lazarev</small>
+            <small>All Rights Reserved 2024</small>
         </S.Footer>
     );
 };

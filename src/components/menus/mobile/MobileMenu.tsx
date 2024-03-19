@@ -4,7 +4,7 @@ import {MenuData} from "../../../App";
 import {Menu} from "../menu/Menu";
 import {Hamburger} from "./Hamburger";
 import {CloseMenu} from "./CloseMenu";
-import {S} from "./MobileMenu-Styles";
+import {S} from "./MobileMenu_Styles";
 
 
 type MobileMenuPropsType = {

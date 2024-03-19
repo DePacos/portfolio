@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./SkillsSection-Styles";
+import {S} from "./SkillsSection_Styles";
 import {StyledTitle} from "../../../components/title/Title";
 import {SkillSimple} from "./skillSimple/SkillSimple";
 
@@ -10,7 +10,7 @@ type SkillsSectionPropsType = {
 }
 export const SkillsSection: React.FC<SkillsSectionPropsType> = (props:SkillsSectionPropsType) => {
     return (
-        <S.SkillsSection>
+        <S.SkillsSection id="skills">
             <StyledTitle>Skills</StyledTitle>
             <SkillSimple
                 skillsData={props.skillsData}

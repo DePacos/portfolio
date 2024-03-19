@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./ContactForm-Styles";
+import {S} from "./ContactForm_Styles";
 
 
 export const ContactForm: React.FC = () => {

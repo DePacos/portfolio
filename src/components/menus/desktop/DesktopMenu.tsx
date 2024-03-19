@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Menu} from "../menu/Menu";
-import {S} from './DesktopMenu-Styles'
+import {S} from './DesktopMenu_Styles'
 
 import {MenuData} from "../../../App";
 

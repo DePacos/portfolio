@@ -1,6 +1,6 @@
 import React from "react";
 
-import {S} from './CloseMenu-Styles'
+import {S} from './CloseMenu_Styles'
 
 type CloseMenuPropsType  = {
     open: boolean,

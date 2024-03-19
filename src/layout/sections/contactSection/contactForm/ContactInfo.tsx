@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./ContactInfo-Styles";
+import {S} from "./ContactInfo_Styles";
 
 export const ContactInfo: React.FC = () => {
     return (

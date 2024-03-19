@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./Social-Styles";
+import {S} from "./Social_Styles";
 
 export type SocialPropsType={
     iconLink1?: string

@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./ProjectSimple-Styles";
+import {S} from "./ProjectSimple_Styles";
 
 import {ProjectData} from "../../../../App";
 

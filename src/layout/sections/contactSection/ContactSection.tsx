@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./ContactSection-Styles";
+import {S} from "./ContactSection_Styles";
 import {StyledTitle} from "../../../components/title/Title";
 import {ContactForm} from "./contactForm/ContactForm";
 import {ContactInfo} from "./contactForm/ContactInfo";
@@ -12,7 +12,7 @@ import telegram from "../../../assets/icon/telegram-color.svg"
 
 export function ContactSection() {
     return (
-        <S.ContactSection>
+        <S.ContactSection id="contact">
             <StyledTitle>Contact</StyledTitle>
             <S.WrapForm>
                 <ContactForm/>

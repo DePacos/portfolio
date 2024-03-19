@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./MainTitle-Styles";
+import {S} from "./MainTitle_Styles";
 
 export const MainTitle: React.FC = () => {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import {S} from './Hamburger-Styles'
+import {S} from './Hamburger_Styles'
 
 type HamburgerPropsType  = {
     open: boolean,

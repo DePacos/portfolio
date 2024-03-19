@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./ProjectButton-Styles";
+import {S} from "./ProjectButton_Styles";
 
 
 export type ProjectButtonPropsType = {

@@ -1,6 +1,6 @@
 import React from 'react';
 import photo from '../../../../assets/images/photo-0.webp'
-import {S} from "./MainPhoto-Styles";
+import {S} from "./MainPhoto_Styles";
 
 export const MainPhoto: React.FC = () => {
     return (

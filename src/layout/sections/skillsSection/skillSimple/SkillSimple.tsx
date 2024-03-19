@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./SkillSimple-Styles";
+import {S} from "./SkillSimple_Styles";
 import {Icon} from "../../../../components/icons/Icon";
 
 import {SkillsData} from "../../../../App";

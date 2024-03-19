@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from "./ProjectSection-Styles";
+import {S} from "./ProjectSection_Styles";
 import {StyledTitle} from "../../../components/title/Title";
 import {ProjectSimple} from "./projectSimple/ProjectSimple";
 import {ProjectButton} from "./projectSimple/ProjectButton";
@@ -13,7 +13,7 @@ type ProjectSectionPropsType = {
 
 export const ProjectSection: React.FC<ProjectSectionPropsType> = (props: ProjectSectionPropsType) => {
     return (
-        <S.ProjectSection>
+        <S.ProjectSection id="projects">
             <StyledTitle>Project</StyledTitle>
             <ProjectButton skillsButtonData={props.skillsButtonData}/>
             <ProjectSimple projectData={props.projectData}/>

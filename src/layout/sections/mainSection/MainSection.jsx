@@ -2,12 +2,12 @@ import React from 'react';
 import {MainPhoto} from "./mainPhoto/MainPhoto";
 import {MainTitle} from "./mainTitle/MainTitle";
 import {Icon} from "../../../components/icons/Icon";
-import {S} from "./MainSection-Styles";
+import {S} from "./MainSection_Styles";
 
 
 export const MainSection: React.FC = () => {
   return (
-    <S.MainSection>
+    <S.MainSection id="home">
       <S.Container>
         <S.Wrap>
             <MainPhoto/>
