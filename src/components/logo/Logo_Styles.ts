@@ -8,7 +8,6 @@ const Logo = styled.a
         line-height: 60px;
         color: ${({theme}) => theme.colors.fontColor}
     `
-
 export const S = {
     Logo,
 }

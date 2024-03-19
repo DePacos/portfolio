@@ -6,7 +6,7 @@ const ProjectSimple = styled.ul
         display: grid;
         column-gap: 30px;
         row-gap: 50px;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+        grid-template-columns: repeat(auto-fill, 260px);
         justify-content: center;
 
         li {
@@ -35,7 +35,7 @@ const ProjectSimple = styled.ul
             font-size: 22px;
             font-weight: 700;
             line-height: 30px;
-            max-width: 204px;;
+            max-width: 205px;;
             margin: 17px auto 25px auto;
             color: ${({theme}) => theme.colors.fontProjColor};
         }
@@ -44,7 +44,7 @@ const ProjectSimple = styled.ul
 const WrapProjectLinks = styled.div
     `
         display: grid;
-        grid-template-columns: 109px 74px;
+        grid-template-columns: 110px 75px;
         gap: 20px;
         justify-content: center;
         align-items: center;
@@ -56,8 +56,8 @@ const ProjectButton = styled(Button)
         font-size: 14px;
         font-weight: 700;
         line-height: 20px;
-        width: 109px;
-        height: 29px;
+        width: 110px;
+        height: 30px;
         border-radius: 12px;
         background-color: ${({theme}) => theme.bg.projectBtnBg};
         color: #353535;

@@ -48,6 +48,7 @@ const ContactInfo = styled.div
             padding: 50px 0;
             border-radius: 20px;
             box-shadow: 8px 8px 34px rgba(0, 0, 0, .2);
+            background-color: ${({theme}) => theme.bg.formWrapBg};
             ul{
                 justify-content: center;
             }

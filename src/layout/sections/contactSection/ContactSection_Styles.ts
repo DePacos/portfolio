@@ -23,6 +23,7 @@ const WrapForm = styled.div
             grid-template-columns: auto;
             justify-items: center;
             padding: 0;
+            background-color: transparent;
         }
 
         @media screen and (min-width: 992px) {

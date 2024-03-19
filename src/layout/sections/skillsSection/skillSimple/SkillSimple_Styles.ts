@@ -5,8 +5,8 @@ import cross from '../../../../assets/icon/cross-skills.svg'
 const SkillSimple = styled.ul
     `
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 160px));
-        column-gap: 50px;
+        grid-template-columns: repeat(auto-fill, 190px);
+        column-gap: 40px;
         row-gap: 60px;
         justify-content: center;
         justify-items: center;
@@ -19,12 +19,12 @@ const SkillSimple = styled.ul
 
         span {
             font-family: Roboto, sans-serif;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 700;
             text-transform: uppercase;
             display: grid;
             align-items: end;
-            width: 160px;
+            width: 190px;
             height: 90px;
             border-radius: 24px;
             padding-bottom: 20px;
@@ -49,6 +49,16 @@ const SkillSimple = styled.ul
            right: -30px;
            bottom: -130px;
        }
+        @media ${({theme}) => theme.media.mobileMax} {
+            grid-template-columns: repeat(auto-fill, 140px);
+            row-gap: 40px;
+            
+            span{
+                font-size: 18px;
+                width: 140px;
+                height: 80px;
+            }
+        }
     `
 
 export const S = {

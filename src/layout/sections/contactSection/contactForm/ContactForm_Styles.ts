@@ -42,6 +42,7 @@ const ContactForm = styled.form
             padding: 50px 80px;
             border-radius: 20px;
             box-shadow: 8px 8px 34px rgba(0, 0, 0, .2);
+            background-color: ${({theme}) => theme.bg.formWrapBg};
         }
 
         @media ${({theme}) => theme.media.tabletMax} {  ;

@@ -8,10 +8,10 @@ const Footer = styled.footer
     height: 240px;
     background: ${({theme}) => theme.bg.footerBgImg};
     background-position: center;
-    span{
+    small{
         display: block;
     }
-    span:nth-child(1){
+    small:nth-child(1){
         font-family: Inter, sans-serif;
         font-size: 16px;
         font-weight: 700;
@@ -19,7 +19,7 @@ const Footer = styled.footer
         margin-bottom: 7px;
         color: ${({theme}) => theme.colors.fontLight};
     }
-    span:nth-child(2){
+    small:nth-child(2){
         font-family: Inter, serif;
         font-size: 11px;
         font-weight: 400;
@@ -29,7 +29,7 @@ const Footer = styled.footer
     }
     @media ${({theme}) => theme.media.tabletMax}{
         height: 150px;
-        span:nth-child(2){
+        small:nth-child(2){
             margin-bottom: 40px;
         }
     }

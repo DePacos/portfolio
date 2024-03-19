@@ -14,9 +14,9 @@ const DesktopMenu = styled.nav
             gap: 55px;
             margin-right: 65px;
         }
-
+        a.active,
         a:hover {
-            transform: scale(1.15);
+            transform: scale(1.2);
         }
 
         @media ${({theme}) => theme.media.tabletMax} {
