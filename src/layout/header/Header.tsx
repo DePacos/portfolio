@@ -6,7 +6,7 @@ import {MobileMenu} from "../../components/menus/mobile/MobileMenu";
 
 import {MenuData} from "../../App";
 
-import {S} from './Header-Styles'
+import {S} from './Header_Styles'
 
 export type HeaderPropsType = {
     menuData: MenuData[],
@@ -20,19 +20,26 @@ export type OffsetPropsType = {
 export const Header: React.FC<HeaderPropsType> = (props: HeaderPropsType) => {
 
     const [offset, setOffset] = useState(0);
+    const [widthViewport, setWidthViewport] = useState(window.innerWidth);
 
     useEffect(() => {
         window.onscroll = () => {
             setOffset(window.pageYOffset);
         };
+
+        const handleWindowResize = () => setWidthViewport(window.innerWidth)
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => window.removeEventListener('resize', handleWindowResize)
+
     }, []);
 
     return (
         <S.Header offset={offset}>
             <S.Container>
                 <Logo/>
-                <DesktopMenu menuData={props.menuData}/>
-                <MobileMenu menuData={props.menuData}/>
+                {widthViewport < 769 ? <MobileMenu menuData={props.menuData}/>
+                                     : <DesktopMenu menuData={props.menuData}/>}
                 <S.ChangeThemeBtn onClick={props.changeTheme}>
                     <Icon iconId={'moon'} size={'36'} viewBox={'0 0 90 90'}/>
                 </S.ChangeThemeBtn>
