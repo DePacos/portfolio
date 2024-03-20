@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import {MainContainer} from "../../../components/container/Container";
 
 const ContactSection = styled.section
     `
-        margin-bottom: 65px;
-        padding: 0 30px;
+        margin-bottom: 80px;
+    `
+
+const Container = styled(MainContainer)
+    `
+        max-width: 930px;
     `
 
 const WrapForm = styled.div
@@ -13,9 +18,8 @@ const WrapForm = styled.div
         gap: 20px;
         justify-items: end;
         align-items: center;
-        max-width: 930px;
-        margin: 0 auto 120px auto;
         padding: 50px 80px;
+        margin-bottom: 120px;
         border-radius: 20px;
         background-color: ${({theme}) => theme.bg.formWrapBg};
         
@@ -33,4 +37,5 @@ const WrapForm = styled.div
 export const S = {
     ContactSection,
     WrapForm,
+    Container,
 }
