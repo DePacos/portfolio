@@ -1,14 +1,17 @@
-import project_1 from  '../assets/images/project-1.webp'
-import project_2 from  '../assets/images/project-2.webp'
-import project_3 from  '../assets/images/project-3.webp'
-import project_4 from  '../assets/images/project-4.webp'
+import project_1 from '../assets/images/project-1.webp'
+import project_2 from '../assets/images/project-2.webp'
+import project_3 from '../assets/images/project-3.webp'
+import project_4 from '../assets/images/project-4.webp'
+
+import testimonialImg from '../assets/images/testi-face.webp'
+
 export const dataBase = {
     menuData: [
-        {id: 1, name: 'Home', link: '#'},
-        {id: 2, name: 'Skills', link: '#'},
-        {id: 3, name: 'Projects', link: '#'},
-        {id: 4, name: 'Testimonial', link: '#'},
-        {id: 5, name: 'Contact', link: '#'},
+        {id: 1, name: 'Home', link: 'home'},
+        {id: 2, name: 'Skills', link: 'skills'},
+        {id: 3, name: 'Projects', link: 'projects'},
+        {id: 4, name: 'Testimonial', link: 'testimonial'},
+        {id: 5, name: 'Contact', link: 'contact'},
     ],
     skillsData: [
         {id: 1, iconId: 'htmlIcon', name: 'html'},
@@ -71,6 +74,26 @@ export const dataBase = {
             title: 'Story motion for sale English cources',
             image: project_4,
             link: '#',
+        },
+    ],
+    testimonialData: [
+        {
+            id: 1,
+            name: 'Michal John',
+            image: testimonialImg,
+            testimonial: 'Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.',
+        },
+        {
+            id: 2,
+            name: 'Michal John',
+            image: testimonialImg,
+            testimonial: 'Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.',
+        },
+        {
+            id: 3,
+            name: 'Michal John',
+            image: testimonialImg,
+            testimonial: 'Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.',
         },
     ]
 }
