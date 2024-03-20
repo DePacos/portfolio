@@ -13,11 +13,6 @@ export const GlobalStyles = createGlobalStyle
     a {text-decoration: none}
     ul {list-style: none;}
     
-    .main-container{
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-    
     @media (prefers-reduced-motion: reduce) {
         animation: none;
     }

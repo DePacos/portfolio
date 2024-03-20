@@ -53,12 +53,12 @@ export class App extends Component<AppPropsType, AppStateType> {
     constructor(props: AppPropsType) {
         super(props);
 
-    this.state = {
-        theme: false,
+        this.state = {
+            theme: false,
         }
     }
 
-    changeTheme = () =>{
+    changeTheme = () => {
         this.setState({theme: !this.state.theme})
     }
 
@@ -66,16 +66,14 @@ export class App extends Component<AppPropsType, AppStateType> {
         return (
             <ThemeProvider theme={this.state.theme ? glThemeLight : glThemeDark}>
                 <StyledApp className="App">
-                    <div className="main-container">
-                        <Header menuData={this.props.dataBase.menuData} changeTheme={this.changeTheme}/>
-                        <Main
-                            skillsData={this.props.dataBase.skillsData}
-                            skillsButtonData={this.props.dataBase.skillsButtonData}
-                            projectData={this.props.dataBase.projectData}
-                            testimonialData={this.props.dataBase.testimonialData}
-                        />
-                        <Footer/>
-                    </div>
+                    <Header menuData={this.props.dataBase.menuData} changeTheme={this.changeTheme}/>
+                    <Main
+                        skillsData={this.props.dataBase.skillsData}
+                        skillsButtonData={this.props.dataBase.skillsButtonData}
+                        projectData={this.props.dataBase.projectData}
+                        testimonialData={this.props.dataBase.testimonialData}
+                    />
+                    <Footer/>
                 </StyledApp>
             </ThemeProvider>
         );
