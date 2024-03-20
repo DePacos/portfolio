@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {MainContainer} from "../../../components/container/Container";
+import {MainContainer} from "../../../components/container/MainContainer";
 
 const TestimonialSection = styled.section
     `

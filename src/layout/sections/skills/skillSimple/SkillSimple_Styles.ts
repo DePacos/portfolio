@@ -46,7 +46,7 @@ const SkillSimple = styled.ul
            width: 350px;
            height: 350px;
            background: url(${cross});
-           right: -30px;
+           right: -20px;
            bottom: -130px;
        }
         @media ${({theme}) => theme.media.mobileMax} {

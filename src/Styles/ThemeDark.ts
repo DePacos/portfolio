@@ -27,7 +27,7 @@ export const glThemeDark = {
         projectBtnBg: '#fff',
         formWrapBg: '#2c2b2b',
         formInputBg: '#393838',
-        footerBgImg: `url(${footerBg}) no-repeat, linear-gradient(0deg,rgba(36,51,92,1) 40%,rgba(255,255,255,0) 40%)`,
+        footerBgImg: `url(${footerBg})`,
     },
     border:{
         mainBorder: 'rgba(85, 96, 128, 1)',

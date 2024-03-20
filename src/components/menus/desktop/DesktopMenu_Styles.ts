@@ -18,10 +18,6 @@ const DesktopMenu = styled.nav
         a:hover {
             transform: scale(1.2);
         }
-
-        @media ${({theme}) => theme.media.tabletMax} {
-            display: none;
-        }
     `
 export const S = {
     DesktopMenu,

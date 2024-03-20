@@ -31,10 +31,6 @@ const MobileMenu = styled.nav<{open: boolean}>
         a:hover {
             transform: scale(1.10);
         }
-        
-        @media ${({theme}) => theme.media.tabletMin} {
-            display: none;
-        }
     `
 export const S = {
     MobileMenu,

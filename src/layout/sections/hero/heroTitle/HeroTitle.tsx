@@ -1,7 +1,7 @@
 import React from 'react';
-import {S} from "./MainTitle_Styles";
+import {S} from "./HeroTitle_Styles";
 
-export const MainTitle: React.FC = () => {
+export const HeroTitle: React.FC = () => {
     return (
         <>
             <S.Wrap>Hi There

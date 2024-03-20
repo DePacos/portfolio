@@ -14,6 +14,7 @@ const ContactForm = styled.form
             padding-left: 25px;
             height: 36px;
             background-color: ${({theme}) => theme.bg.formInputBg};
+            color: ${({theme}) => theme.colors.fontColor};
             border: none;
             border-radius: 9px;
         }

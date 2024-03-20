@@ -6,8 +6,8 @@ const Footer = styled.footer
     align-content: end;
     text-align: center;
     height: 240px;
-    background: ${({theme}) => theme.bg.footerBgImg};
-    background-position: center;
+    background: ${({theme}) => theme.bg.footerBgImg} no-repeat center;
+        background-size: cover;
     small{
         display: block;
     }
