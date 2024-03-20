@@ -5,11 +5,30 @@ import {Button} from "../../../../components/button/Button";
 const WrapProjectButton = styled.ul
     `
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 160px));
+        grid-template-columns: repeat(auto-fit, 160px);
         gap: 30px;
         justify-content: space-around;
         justify-items: center;
-        margin-bottom: 55px;
+        margin-bottom: 45px;
+
+        ::-webkit-scrollbar-thumb {
+            background-color: red;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: orange;
+        }
+
+        scrollbar-color: ${({theme}) => theme.bg.bgSocIcon} #c2c2c2;
+        scrollbar-width: thin;
+
+
+        @media screen and (max-width: 991px) {
+            grid-template-columns: repeat(4, 160px);
+            justify-content: start;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
     `
 
 const ProjectButton = styled(Button)
