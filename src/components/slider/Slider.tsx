@@ -18,7 +18,7 @@ export const Slider: React.FC<SliderPropsType> = (props: SliderPropsType) => {
             interval={5000}
         >
                 {props.testimonialData.map((e) => {
-                    return <S.Slide>
+                    return <S.Slide key={e.id}>
                         <img src={e.image} alt="Testimonial"/>
                         <span>{e.name}</span>
                         <p>{e.testimonial}</p>

@@ -12,7 +12,7 @@ export const ProjectSimple: React.FC<ProjectSimpleTypeProps> = (props: ProjectSi
         <S.ProjectSimple>
             {props.projectData.map((e => {
                 return (
-                    <li>
+                    <li key={e.id}>
                         <img src={e.image} alt="project"/>
                         <div>
                             <h3>{e.title}</h3>
