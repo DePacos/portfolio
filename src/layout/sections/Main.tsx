@@ -3,7 +3,7 @@ import {Hero} from "./hero/Hero";
 import {Skills} from "./skills/Skills";
 import {Project} from "./project/Project";
 
-import {SkillsData, ProjectData, TestimonialData} from "../../App";
+import {SkillsData, ProjectData, TestimonialData, ProjectsButtonData} from "../../App";
 import {Contact} from "./contact/Contact";
 import {Social} from "../../components/social/Social";
 
@@ -12,9 +12,10 @@ import wa from '../../assets/icon/wa-white.svg'
 import telegram from '../../assets/icon/telegram-white.svg'
 import {Testimonial} from "./testimonial/Testimonial";
 
+
 type MainPropsType = {
     skillsData: SkillsData[],
-    skillsButtonData: Array<string>,
+    projectsButtonData: ProjectsButtonData[],
     projectData: ProjectData[],
     testimonialData: TestimonialData[],
 }
@@ -27,7 +28,7 @@ export function Main(props: MainPropsType) {
                 skillsData={props.skillsData}
             />
             <Project
-                skillsButtonData={props.skillsButtonData}
+                projectsButtonData={props.projectsButtonData}
                 projectData={props.projectData}
             />
             <Testimonial testimonialData={props.testimonialData}/>

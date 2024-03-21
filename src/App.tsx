@@ -26,6 +26,12 @@ export type ProjectData = {
     title: string;
     image: string;
     link: string;
+    type: string;
+}
+
+export type ProjectsButtonData = {
+    id: number;
+    title: string;
 }
 
 export type TestimonialData = {
@@ -40,7 +46,7 @@ type AppPropsType = {
         menuData: MenuData[],
         skillsData: SkillsData[],
         projectData: ProjectData[],
-        skillsButtonData: Array<string>,
+        projectsButtonData: ProjectsButtonData[],
         testimonialData: TestimonialData[],
     }
 }
@@ -69,7 +75,7 @@ export class App extends Component<AppPropsType, AppStateType> {
                     <Header menuData={this.props.dataBase.menuData} changeTheme={this.changeTheme}/>
                     <Main
                         skillsData={this.props.dataBase.skillsData}
-                        skillsButtonData={this.props.dataBase.skillsButtonData}
+                        projectsButtonData={this.props.dataBase.projectsButtonData}
                         projectData={this.props.dataBase.projectData}
                         testimonialData={this.props.dataBase.testimonialData}
                     />
