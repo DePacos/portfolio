@@ -4,20 +4,32 @@ import {StyledTitle} from "../../../components/title/Title";
 import {ProjectSimple} from "./projectSimple/ProjectSimple";
 import {ProjectButton} from "./projectSimple/ProjectButton";
 
-import {ProjectData} from "../../../App";
+import {ProjectData, ProjectsButtonData} from "../../../App";
 
 type ProjectSectionPropsType = {
-    skillsButtonData: Array<string>,
+    projectsButtonData: ProjectsButtonData[],
     projectData: ProjectData[];
 }
 
 export const Project: React.FC<ProjectSectionPropsType> = (props: ProjectSectionPropsType) => {
+
+    const [typeProject, setTypeProjects] = React.useState<string>('all')
+    let filterProject = props.projectData
+
+    if(typeProject !== 'all'){
+        filterProject = props.projectData.filter((e) => typeProject === e.type)
+    }
+
     return (
         <S.ProjectSection id="projects">
             <S.Container>
                 <StyledTitle>Project</StyledTitle>
-                <ProjectButton skillsButtonData={props.skillsButtonData}/>
-                <ProjectSimple projectData={props.projectData}/>
+                <ProjectButton
+                    typeProject={typeProject}
+                    setTypeProjects={setTypeProjects}
+                    projectsButtonData={props.projectsButtonData}/>
+                <ProjectSimple
+                    projectData={filterProject}/>
             </S.Container>
         </S.ProjectSection>
     );

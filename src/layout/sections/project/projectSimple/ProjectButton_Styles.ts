@@ -47,6 +47,7 @@ const ProjectButton = styled(Button)
         cursor: pointer;
         transition: all .4s;
         
+        &.active,
         &:hover{
             background-color: ${({theme}) => theme.bg.skillsBgIcon};
             border: 3px solid ${({theme}) => theme.bg.skillsBgIcon};
