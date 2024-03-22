@@ -39,6 +39,7 @@ const SkillSimple = styled.ul
             padding: 10px;
             margin-top: -30px;
             bottom: -30px;
+            animation: rotate-icon 5s 5 linear;
         }
        &::after{
            position: absolute;
@@ -57,6 +58,18 @@ const SkillSimple = styled.ul
                 font-size: 18px;
                 width: 140px;
                 height: 80px;
+            }
+        }
+
+        @keyframes rotate-icon {
+            0% {
+                transform: rotate(0deg);
+            }
+            //30%{
+            //    transform: rotate(360deg);
+            //}
+            100% {
+                transform: rotate(360deg);
             }
         }
     `
