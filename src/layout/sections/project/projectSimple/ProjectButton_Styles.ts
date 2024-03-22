@@ -25,7 +25,6 @@ const WrapProjectButton = styled.ul
 
         @media screen and (max-width: 991px) {
             grid-template-columns: repeat(4, 160px);
-            justify-content: start;
             overflow-x: auto;
             padding-bottom: 10px;
         }
