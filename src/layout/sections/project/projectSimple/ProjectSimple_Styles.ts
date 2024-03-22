@@ -9,6 +9,28 @@ const ProjectSimple = styled.ul
         grid-template-columns: repeat(auto-fill, 260px);
         justify-content: center;
 
+        .projectCard-enter {
+            
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .projectCard-enter-active {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity .3s, transform .3s;
+        }
+
+        .projectCard-exit {
+            opacity: 1;
+        }
+
+        .projectCard-exit-active {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity .3s, transform .3s;
+        }
+
         li {
             display: grid;
             grid-template-rows: 240px 1fr;
